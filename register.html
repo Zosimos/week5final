@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>User Registration System</title>
+        <link rel="stylesheet" href="./styles/mystyle.css" />
+    </head>
+    <body>
+        <header>
+            <h1>User Registration System</h1>
+        </header>
+        <div class="form">
+            <div id="pnlSuccess" class="ok-alert">
+                <p>User saved correctly!</p>
+            </div>
+            <h2>Add User</h2>
+            <!--firstname, lastname, age, gender, phone number, payment method, color-->
+            <div class="control">
+                <label>First Name:</label>
+                <input type="text" id="txtFirstName" />
+            </div>
+            <div class="control">
+                <label>Last Name:</label>
+                <input type="text" id="txtLastName" />
+            </div>
+            <div class="control">
+                <label>Age:</label>
+                <input type="number" id="txtAge" />
+            </div>
+            <div class="control">
+                <label>Gender:</label>
+                <input type="text" id="txtGender" />
+            </div>
+            <div class="control">
+                <label>Phone:</label>
+                <input type="tel" id="txtPhone" />
+            </div>
+            <div class="control">
+                <label>Payment Method:</label>
+                <select id="selPayment">
+                    <option value="cash">Cash</option>
+                    <option value="credit">Credit Card</option>
+                    <option value="paypal">Paypal</option>
+                </select>
+            </div>
+            <div class="control">
+                <label>Color:</label>
+                <input type="color" id="selColor" />
+            </div>
+            <button class="btn" id="btnSave">Add</button>
+        </div>
+
+        <table id="tblUser">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
+                    <th>Color</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script src="./scripts/storage.js"></script>
+        <script src="./scripts/register.js"></script>
+    </body>
+</html>
